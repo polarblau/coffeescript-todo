@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html class='no-js' lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <title>Pure CoffeeScript Todo app</title>
+    <meta content='' name='description'>
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    <link href='/favicon.ico' shortcut='shortcut icon'>
+    <link href='stylesheets/screen.css' rel='stylesheet'>
+  </head>
+  <body>
+    <div id='main' role='main'></div>
+    <script id='todo-list' type='text/x-handlebars-template'>
+      <form action="#" method="post">
+        <input type="text" class="new-todo" placeholder="What needs to be done?" />
+      </form>
+      <ul id="todos"></ul>
+      <p class="clear"><a href="#">Clear completed</a></p>
+    </script>
+    <script id='todo' type='text/x-handlebars-template'>
+      <input type="checkbox" class="complete" {{#if todo.complete}}checked{{/if}} />
+      <strong>{{todo.name}}</strong>
+      <input class="edit" value="{{todo.name}}" />
+      <a class="remove" href="#">Remove</a>
+    </script>
+    <script src='javascripts/vendor/jquery.min.js'></script>
+    <script src='javascripts/vendor/handlebars.js'></script>
+    <script src='javascripts/lib/base/view.js'></script>
+    <script src='javascripts/lib/models/todo.js'></script>
+    <script src='javascripts/lib/views/todo.js'></script>
+    <script src='javascripts/lib/views/todos.js'></script>
+    <script src='javascripts/application.js'></script>
+  </body>
+</html>
