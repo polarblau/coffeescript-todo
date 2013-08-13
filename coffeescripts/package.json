@@ -1,0 +1,21 @@
+{
+  "name": "A",
+  "preferGlobal": true,
+  "version": "0.1.0",
+  "author": "",
+  "description": "",
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*",
+    "cloneextend": "*"
+  },
+  "main": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/polarblau/A.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.6"
+  }
+}
